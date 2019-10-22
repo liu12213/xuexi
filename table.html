@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格</title>
+</head>
+<body>
+    <h1>第一个表格</h1>
+    <table border="1" width="520"style="border-collapse: collapse;">
+        <tr>
+            <td style="padding:8px;">编号</td>
+            <td>班级</td>
+            <td>姓名</td>
+            <td>入学时间</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>一班</td>
+            <td>方淤青</td>
+            <td>1998年8月</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>一班</td>
+            <td>肥仔东</td>
+            <td>1999年8月</td>
+        </tr>
+      
+    </table>
+<h1>和并列</h1>
+<table border="1"style="border-collapse: collapse;border:4px solid black;">
+    <tr>
+        <td style="padding:8px;">编号</td>
+        <td>班级</td>
+        <td>姓名</td>
+        <td>入学时间</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>一班</td>
+        <td colspan="2">方淤青-1998年8月</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>一班</td>
+        <td>肥仔东</td>
+        <td>1999年8月</td>
+    </tr>
+</table>
+
+<h1>合并行</h1>
+<table border="1"style="border-collapse: collapse;border:4px solid black;">
+    <tr>
+        <td style="padding:8px;">编号</td>
+        <td>班级</td>
+        <td>姓名</td>
+        <td>入学时间</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td rowspan="2">一班</td>
+        <td>方淤青</td>
+        <td>1998年8月</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>肥仔东</td>
+        <td>1999年8月</td>
+    </tr>
+</table>
+</body>
+</html>
