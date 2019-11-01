@@ -1,0 +1,38 @@
+#a {
+    position: relative;
+
+}
+
+#c {
+    position: relative;
+    border: 1px solid #000;
+    height: 520px;
+    width: 80%;
+    margin: 0 10%;
+    background-color: snow;
+    overflow: hidden;
+}
+
+#f {
+    margin: 20px;
+    text-align: center;
+}
+
+#f .f-input {
+    line-height: 32px;
+}
+
+#f .f-input input {
+    text-align: center;
+    line-height: 64px;
+    height: 32px;
+    width: 45%;
+}
+
+#f input[type=button] {
+    background-color: darkslategrey;
+    border: 1px solid lightgreen;
+    height: 32px;
+    width: 22.6%;
+}
+body{margin: 0;}

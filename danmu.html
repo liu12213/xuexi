@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹幕弹幕弹幕</title>
+    <link rel="stylesheet" href="styles\danmu.css">
+</head>
+
+<body>
+    <div id="a">
+        <div id="c"></div>
+        <div id="f">
+            <div class="f-input">
+                <input id="input" type="text" placeholder="弹幕弹幕弹幕">
+            </div>
+            <div>
+                <input id="bt" type="button" onclick="fs()" value="发送">
+                <input id="cl" type="button" value="清屏">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $("#cl").click(function () {
+            $(".cl").empty()
+        })
+
+        function fs() {
+            console.log("fs")
+            let val = $("#input").val()
+            if (val == "") {
+                alert("请输弹幕内容！")
+            } else {
+               
+                let s = Math.floor(Math.random() * 32)
+
+                let v = Math.floor(Math.random() * 4567)
+
+                let t = Math.floor(Math.random() * 480)
+                
+                let color1 = Math.floor(Math.random() * 256)
+                let color2 = Math.floor(Math.random() * 256)
+                let color3 = Math.floor(Math.random() * 256)
+
+                let content = $("<div class='cl'>" + val + "</div>")
+
+                    .css({
+                        "position": "absolute",
+                        "color": "rgb(" + color1 + "," + color2 + "," + color3 + ")",
+                        "font-size": s + "px",
+                        "top": t + "px",
+                        "right": 0
+                    })
+                $("#c").append(content)
+                content.animate({
+                        left: 0
+                    },
+                    v,
+                    function () {
+                        $(this).remove()
+                    });
+            }
+        };
+        $("#input").keypress(function () {
+            if (event.keyCode == 13) {
+                fs()
+            }
+        })
+    </script>
+</body>
+
+</html>

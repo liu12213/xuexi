@@ -1,6 +1,7 @@
 body {
-    margin: 0; }
-  
+    margin: 0;
+}
+
 
 ul {
     list-style-type: none;
@@ -15,8 +16,6 @@ li a {
     color: #000;
     padding: 6px 16px;
     text-decoration: none;
-
-
 }
 
 li {
@@ -32,7 +31,8 @@ li a:hover {
     background-color: #555;
     color: white;
 }
-li a:active{
+
+li a:active {
     background-color: royalblue;
 }
 
@@ -58,16 +58,19 @@ li a:active{
     font-size: large;
 }
 
-.f {  float: left;
+.f {
+    float: left;
     width: 17%;
     list-style-type: none;
     vertical-align: top;
     position: sticky;
     top: 0;
-   
+
 }
 
-.g{padding: 10px;}
+.g {
+    padding: 10px;
+}
 
 .h {
     text-align: center;
@@ -97,7 +100,7 @@ li a:active{
 }
 
 .l {
-   
+
     text-align: center;
     background-color: slateblue;
     line-height: 64px;
@@ -119,12 +122,13 @@ p:first-letter {
 
 
 #y {
-   
+
     display: inline-block;
     width: 83%;
     background-color: white;
-  
+
 }
-.x{
+
+.x {
     background-color: thistle;
 }
