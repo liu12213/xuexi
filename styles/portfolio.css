@@ -86,30 +86,25 @@
     background-color: greenyellow;
     font-size: 16px;
 }
-
 #footer .left {
     margin-left: 50px;
     float: left;
     width: 60%;
 }
-
 #footer .right {
     float: right;
     padding: 1px 50px;
 }
-
 #footer .right img {
     width: 100px;
     height: 100px;
 }
-
 #container .container-e:hover
 {
   opacity:0.6;
   filter:alpha(opacity=60);
   background-color: lightblue;
 }
-
 .s{width: 100%;
     border: 2px solid #333;
 }
