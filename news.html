@@ -62,11 +62,11 @@
                             .then(function (res) {
                                 console.log('res', res);
                                 for (var index in res.data) {
-                                    $('#lbb').append('<div id="lb"><div><img src="' + res.data[index].img + '"></div>'
-                                        + '<div id="wz1"><p>' + res.data[index].wz1 + '</p>' + '</div>'
-                                        + '<div>发布日期：' + res.data[index].rq + '</div>'
-                                        + '<div><p>' + res.data[index].wz2 + '</p></div></div>'
-                                    );
+                                    $('#lbb').append('<a href="news-detail.html" style="color:#000"><div id="lb"><div><img src="' + res.data[index].img + '"></div>'
+                                    + '<div id="wz1"><p>' + res.data[index].wz1 + '</p>' + '</div>'
+                                    + '<div>发布日期：' + res.data[index].rq + '</div>'
+                                    + '<div><p>' + res.data[index].wz2 + '</p></div></div></a>'
+                                );
                                 }
                             })
                     }
